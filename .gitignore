@@ -1,0 +1,20 @@
+# Rust
+target/
+**/*.rlib
+
+# Zellij plugin wasm
+*.wasm
+
+# Go
+*.test
+*.out
+
+# Editor/OS
+.DS_Store
+.idea/
+.vscode/
+
+# Submodule build artifacts
+zellij/target/
+zellij/**/target/
+**/node_modules/
