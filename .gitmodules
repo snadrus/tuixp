@@ -1,0 +1,6 @@
+[submodule "tuitop"]
+	path = tuitop
+	url = https://github.com/snadrus/tuitop
+[submodule "zellij"]
+	path = zellij
+	url = https://github.com/zellij-org/zellij
