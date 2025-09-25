@@ -1,2 +1,0 @@
-warning: the `wasm32-wasi` target is being renamed to `wasm32-wasip1` and the `wasm32-wasi` target will be removed from nightly in October 2024 and removed from stable Rust in January 2025
-
