@@ -1,8 +1,10 @@
 layout {
   tab name="tuitop" split_direction="vertical" {
     pane borderless=true {
-      plugin location="file:/workspace/tuitop-zellij-plugin/target/wasm32-wasi/release/tuitop_zellij_plugin.wasm"
+      plugin location="file:/tuitop-zellij-plugin/target/wasm32-wasip1/release/libtuitop_zellij_plugin.d"
     }
-    pane size=1 borderless=true stacked=true run="zellij:status-bar" {}
+    pane size=1 borderless=true {
+      plugin location="zellij:status-bar"
+    }
   }
 }

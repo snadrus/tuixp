@@ -12,12 +12,12 @@ Prereqs
 Build the plugin
 ```bash
 source /usr/local/cargo/env
-cargo build --release --manifest-path /workspace/tuitop-zellij-plugin/Cargo.toml --target wasm32-wasi
+cargo build --release --manifest-path tuitop-zellij-plugin/Cargo.toml --target wasm32-wasip1
 ```
 
 Run with layout
 ```bash
-zellij --layout /workspace/zellij-layouts/tuitop.kdl
+zellij --layout zellij-layouts/tuitop.kdl
 ```
 
 Notes
