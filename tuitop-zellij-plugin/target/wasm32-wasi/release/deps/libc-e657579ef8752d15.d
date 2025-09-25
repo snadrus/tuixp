@@ -1,0 +1,12 @@
+/workspace/tuitop-zellij-plugin/target/wasm32-wasi/release/deps/liblibc-e657579ef8752d15.rmeta: /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/lib.rs /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/macros.rs /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/new/mod.rs /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/primitives.rs /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/wasi/mod.rs /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/types.rs
+
+/workspace/tuitop-zellij-plugin/target/wasm32-wasi/release/deps/liblibc-e657579ef8752d15.rlib: /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/lib.rs /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/macros.rs /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/new/mod.rs /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/primitives.rs /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/wasi/mod.rs /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/types.rs
+
+/workspace/tuitop-zellij-plugin/target/wasm32-wasi/release/deps/libc-e657579ef8752d15.d: /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/lib.rs /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/macros.rs /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/new/mod.rs /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/primitives.rs /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/wasi/mod.rs /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/types.rs
+
+/usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/lib.rs:
+/usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/macros.rs:
+/usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/new/mod.rs:
+/usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/primitives.rs:
+/usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/wasi/mod.rs:
+/usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/libc-0.2.176/src/types.rs:
