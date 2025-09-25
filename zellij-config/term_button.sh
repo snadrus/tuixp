@@ -7,7 +7,18 @@ echo "[q] Quit"
 while true; do
   IFS= read -rsn1 k || break
   case "$k" in
-    $'\n'|$'\r'|'') /workspace/bin/zellij action new-pane || true ;;
+    $'\n'|$'\r'|'')
+      mkdir -p /workspace/zellij-config/state
+      counter_file=/workspace/zellij-config/state/float_counter
+      : > /workspace/zellij-config/state/floats.list || true
+      if [ ! -f "$counter_file" ]; then echo 0 > "$counter_file"; fi
+      id=$(($(cat "$counter_file") + 1))
+      echo "$id" > "$counter_file"
+      name="term-$id"
+      grep -qxF "$name" /workspace/zellij-config/state/floats.list || echo "$name" >> /workspace/zellij-config/state/floats.list
+      /workspace/bin/zellij run --floating --pinned --name "$name" -- ${SHELL:-bash} || true
+      printf "Launched terminal: %s.\n" "$name"
+      ;;
     q|Q) exit 0 ;;
   esac
 done

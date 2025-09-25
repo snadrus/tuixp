@@ -1,6 +1,19 @@
 #!/usr/bin/env bash
 set -euo pipefail
-# Simple taskbar: list floating panes as [1] [2] [3] from zellij ls
+# Simple taskbar: show floating pane slots [1][2][3] using state collected by launchers
+state_dir=/workspace/zellij-config/state
+mkdir -p "$state_dir"
+touch "$state_dir/floats.list"
 while true; do
-  panes=$( /workspace/bin/zellij list-panes --floating 2>/dev/null || true )
-  ids=$( echo "$panes" | awk /^s*[0-9]+/
+  out=""
+  i=1
+  if [ -s "$state_dir/floats.list" ]; then
+    while IFS= read -r name; do
+      [ -z "$name" ] && continue
+      out+=" [$i]"
+      i=$((i+1))
+    done < "$state_dir/floats.list"
+  fi
+  printf "\r\033[44;97m  Start  \033[0m  \033[42;30m >_ \033[0m%s\033[K" "$out"
+  sleep 1
+done
