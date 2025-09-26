@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 # XP-like taskbar with Start and >_ buttons plus floating-pane counters
-state_dir=zellij-config/state
+state_dir=/workspace/zellij-config/state
 mkdir -p "$state_dir"
 counter_file="$state_dir/float_counter"
 list_file="$state_dir/floats.list"
@@ -26,7 +26,7 @@ launch_float() {
   echo "$id" > "$counter_file"
   name="float-$id"
   grep -qxF "$name" "$list_file" || echo "$name" >> "$list_file"
-  zellij/target/release/zellij run --floating --pinned --name "$name" -- zellij-config/float_shell.sh || true
+  /workspace/bin/zellij run --floating --pinned --name "$name" -- /workspace/zellij-config/float_shell.sh || true
 }
 
 launch_term() {
@@ -34,7 +34,7 @@ launch_term() {
   echo "$id" > "$counter_file"
   name="term-$id"
   grep -qxF "$name" "$list_file" || echo "$name" >> "$list_file"
-  zellij/target/release/zellij run --floating --pinned --name "$name" -- ${SHELL:-bash} || true
+  /workspace/bin/zellij run --floating --pinned --name "$name" -- ${SHELL:-bash} || true
 }
 
 clear
