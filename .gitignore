@@ -14,6 +14,7 @@ target/
 .idea/
 .vscode/
 
+
 # Submodule build artifacts
 zellij/target/
 zellij/**/target/

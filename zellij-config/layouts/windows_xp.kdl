@@ -12,7 +12,7 @@ layout {
         pane split_direction="horizontal" size=3 {
             pane borderless=true {
                 command "/bin/bash" {
-                    args "-lc" "/workspace/zellij-config/taskbar_launcher.sh"
+                    args "-lc" "zellij-config/taskbar_launcher.sh"
                 }
             }
         }

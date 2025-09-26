@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 # Simple taskbar: show floating pane slots [1][2][3] using state collected by launchers
-state_dir=/workspace/zellij-config/state
+state_dir=zellij-config/state
 mkdir -p "$state_dir"
 touch "$state_dir/floats.list"
 while true; do
