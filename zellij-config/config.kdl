@@ -1,0 +1,4 @@
+// Minimal config placeholder (left intentionally simple)
+ui {
+    pane_frames true
+}
