@@ -26,7 +26,7 @@ launch_float() {
   echo "$id" > "$counter_file"
   name="float-$id"
   grep -qxF "$name" "$list_file" || echo "$name" >> "$list_file"
-  zellij/target/release/zellij run --floating --pinned --name "$name" -- zellij-config/float_shell.sh || true
+  zellij run --floating --pinned --name "$name" -- zellij-config/float_shell.sh || true
 }
 
 launch_term() {
@@ -34,7 +34,7 @@ launch_term() {
   echo "$id" > "$counter_file"
   name="term-$id"
   grep -qxF "$name" "$list_file" || echo "$name" >> "$list_file"
-  zellij/target/release/zellij run --floating --pinned --name "$name" -- ${SHELL:-bash} || true
+  zellij run --floating --pinned --name "$name" -- ${SHELL:-bash} || true
 }
 
 clear
